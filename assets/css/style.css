@@ -5,6 +5,8 @@ body {
 #jumbotron {
     background-color: tomato;
     text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 28px;
 }
 
 #workouts {
@@ -86,8 +88,8 @@ html, body {
   padding: 5px 11px;
 }
 
-    .pac-controls label {
-  font-family: Roboto;
+ .pac-controls label {
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 300;
 }
@@ -122,9 +124,3 @@ html, body {
   width: 345px;
 }
 
-/* #gymFinder {
-    background-color: dodgerblue;
-    height: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-} */
