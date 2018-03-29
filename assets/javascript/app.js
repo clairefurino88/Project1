@@ -1,4 +1,4 @@
-//  Initial array of recipe
+``//  Initial array of recipe
 var recipe = [];
 
 // display animal fucntion re-renders the HTML to display the appropriate content
@@ -98,4 +98,4 @@ $(document).on("click", ".gif", function() {
 
 
 //renders buttons on load
-renderButtons();
+renderButtons();``

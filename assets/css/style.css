@@ -1,53 +1,100 @@
-   #map {
-    top: 200px;
-    height: 350px;
+body {
+  background-color: black;
+}
 
-    }
+#jumbotron {
+    background-color: tomato;
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 28px;
+}
+
+#workouts {
+  background-color: lavender;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+#workoutBtns {
+  text-align: center;
+}
+
+.btn {
+  margin: 5px 25px 5px 25px;
+}
+
+#nutrition {
+  background-color: forestgreen;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#exerciseBtns {
+  background-color: darksalmon;
+}
+
+#exercises {
+  background-color: darkgoldenrod;
+}
+
+#map {
+  top: 200px;
+  height: 350px;
+}
    
-    html, body {
-    height: 800px;;
-    margin: 10px;
-    padding: 0;
-    } 
-    #description {
-      font-family: Roboto;
-      font-size: 15px;
-      font-weight: 300;
-    }
-    #infowindow-content .title {
-      font-weight: bold;
-    }
-    #infowindow-content {
-      display: none;
-    }
-    #map #infowindow-content {
-      display: inline;
-    }
-    .pac-card {
-      margin: 10px 10px 0 0;
-      border-radius: 2px 0 0 2px;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      outline: none;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      background-color: #fff;
-      font-family: Roboto;
-    }
-    #pac-container {
-      padding-bottom: 12px;
-      margin-right: 12px;
-    }
-    .pac-controls {
-      display: inline-block;
-      padding: 5px 11px;
-    }
-    .pac-controls label {
-      font-family: Roboto;
-      font-size: 13px;
-      font-weight: 300;
-    }
-    #pac-input {
-    background-color: #fff;
+html, body {
+  height: 800px;;
+  margin: 10px;
+  padding: 0;
+} 
+    
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+    
+#infowindow-content .title {
+  font-weight: bold;
+}
+    
+#infowindow-content {
+  display: none;
+}
+    
+#map #infowindow-content {
+  display: inline;
+}
+    
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+    
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+ .pac-controls label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+#pac-input {
+  background-color: #fff;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
@@ -59,17 +106,36 @@
   height: 29px;
   border: 1px solid #fff;
   border-radius: 4px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+    
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.btn:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
     }
-    #pac-input:focus {
-      border-color: #4d90fe;
+    
+    to {
+      -webkit-mask-position: -50%;
     }
-    #title {
-      color: #fff;
-      background-color: #4d90fe;
-      font-size: 25px;
-      font-weight: 500;
-      padding: 6px 12px;
-    }
-    #target {
-      width: 345px;
-    }
+  }
