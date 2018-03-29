@@ -1,9 +1,30 @@
-
-   
-   #map {
+body {
+    background-color: black;
+}
+#jumbotron {
+    background-color: tomato;
+    text-align: center;
+}
+#workouts {
+    background-color: lavender;
+    height: 500px;
+    margin-bottom: 10px;
+}
+#workoutBtns {
+    text-align: center;
+}
+.btn {
+    margin: 5px, 25px, 5px, 25px;
+}
+#nutrition {
+    background-color: forestgreen;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  #map {
     top: 200px;
     height: 350px;
-
     }
    
     html, body {
@@ -75,3 +96,15 @@
     #target {
       width: 345px;
     }
+
+element.style {
+    z-index: 3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}
