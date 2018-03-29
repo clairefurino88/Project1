@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+  background-color: black;
 }
 
 #jumbotron {
@@ -10,24 +10,24 @@ body {
 }
 
 #workouts {
-    background-color: lavender;
-    height: 500px;
-    margin-bottom: 10px;
+  background-color: lavender;
+  height: 500px;
+  margin-bottom: 10px;
 }
 
 #workoutBtns {
-    text-align: center;
+  text-align: center;
 }
 
 .btn {
-    margin: 5px 25px 5px 25px;
+  margin: 5px 25px 5px 25px;
 }
 
 #nutrition {
-    background-color: forestgreen;
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  background-color: forestgreen;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #exerciseBtns {
@@ -122,5 +122,9 @@ html, body {
 
 #target {
   width: 345px;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 23a390be7579826c73b91f84867f2093afd6eb84
