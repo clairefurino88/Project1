@@ -1,14 +1,29 @@
-.container {
-    height: 800px;
-}
+   /* workout buttons */
+   body {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .buttons {
+    font-size: 20px;
+  }
+  .timer {
+    margin: 100px;
+    font-size: 200px;
+  }
+  .exercise {
+    font-size: 180px;
+  }
+  /*   */
    
-   /*************** CSS FOR MAPS ELEMENT ********************/
-    #map {
-    height: 80%; 
+   #map {
+    top: 200px;
+    height: 350px;
+
     }
-    /* Optional: Makes the sample page fill the window. */
+   
     html, body {
-    height: 80%;
+    height: 800px;;
     margin: 10px;
     padding: 0;
     } 
@@ -58,10 +73,10 @@
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 250px;
-    margin-top: 10px;
-    height: 29px;
-    border: 1px solid #fff;
-    border-radius: 4px;
+  margin-top: 10px;
+  height: 29px;
+  border: 1px solid #fff;
+  border-radius: 4px;
     }
     #pac-input:focus {
       border-color: #4d90fe;
