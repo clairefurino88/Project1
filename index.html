@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 1</title>
     <link rel="icon" href="assets/images/muscleArmIcon.png">
-
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
     <!-- jQuery -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,76 +19,64 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<div class="container">
-    <!-- Jumbotron -->
-    <div class="jumbotron" id="jumbotron">
-        <h1>Got Muscles?</h1>
-        <h4>Need a routine?  Need a recipe?  Need a gym?  We got you!</h4>    
-    </div>
+<!-- Jumbotron -->
+<div class="jumbotron" id="jumbotron">
+    <h1>Got Muscles?</h1>
+    <h4>Need a routine?  Need a recipe?  Need a gym?  We got you!</h4>    
+</div>
 
-    <div class"row">
+<div class="container">
 
         <!-- Container for workouts -->
-        <div class="jumbotron" id="workouts">
-            <h3>Get your routines here!</h3>
+    <div class="jumbotron" id="workouts">
+        <h3>Get your routines here!</h3>
 
-            <!-- Body group buttons -->
-            <div class="row" id="workoutBtns">
-                <button class="btn btn-warning" id="shoulderBtn" type="submit">Shoulders</button>
-                <button class="btn btn-success" id="armsBtn" type="submit">Arms</button>
-                <button class="btn btn-danger" id="chestBtn" type="submit">Chest</button>
-                <button class="btn btn-primary" id="backBtn" type="submit">Back</button>
-                <button class="btn btn-info" id="legsBtn" type="submit">Legs</button>
-                <button class="btn btn-default" id="absBtn" type="submit">Abs</button>
+        <!-- Body group buttons -->
+        <div class="row" id="workoutBtnsRow">
+        <div class="col-md-12" id="workoutBtns">
+            <button class="btn btn-warning" id="shoulderBtn" type="submit">Shoulders</button>
+            <button class="btn btn-success" id="armsBtn" type="submit">Arms</button>
+            <button class="btn btn-danger" id="chestBtn" type="submit">Chest</button>
+            <button class="btn btn-primary" id="backBtn" type="submit">Back</button>
+            <button class="btn btn-info" id="legsBtn" type="submit">Legs</button>
+            <button class="btn btn-default" id="absBtn" type="submit">Abs</button>
+        </div>
+        </div>
+
+        <div class="row" id="workoutContent">
+            <div class="col-md-2" id="exerciseBtns">
+                <!-- Buttons with actual exercises generated from body group buttons goes here -->
+                <p>Hi</p>
             </div>
-
-            <!-- Div for content retrieved from API -->
-            <div id="workoutContentHere"></div>
-
+            <div class="col-md-10" id="exercises">
+                <!-- exercises generated from exercise buttons -->
+                <p>Yo</p>
+            </div>
         </div>
 
     </div>
 
-    <div class="row">
+    <!-- <div class="col-md-7"> -->
 
-        <div class="col-md-7">
-
-            <!-- Container for nutrituon -->
-            <div class="jumbotron" id="nutrition">
-                <h3>Hungry?</h3>
-            </div>
-
+        <!-- Container for nutrituon -->
+        <div class="jumbotron" id="nutrition">
+            <h3>Hungry?</h3>
         </div>
 
-        <div class="col-md-5">
+    <!-- </div> -->
 
-            <!-- Container for GymFinder -->
-            <div class="jumbotron" id="gymFinder">
-                <h3>Nowhere to workout?  Find a place near you!</h3>
-
-                <!-- Div for content retrieved from API -->
-                <div id="gymFinderContentHere"></div>
-
-                <!-- Input bar and search button -->
-                <div class="row">
-                        <label for="srchCity">Enter city to find gyms nearest you!</label>
-                        <div class="input-group" id="srchCity">
-                            <input type="text" class="form-control" placeholder="City">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Search</button>
-                            </span>
-                        </div>
-                </div>
-
-            </div>
-        
-        </div>
-
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <input id="pac-input" class="controls" type="text" placeholder="Search City for Gym">
+    <div id="map">
+        <input type="text" placeholder="Search here">
+        <span class="search glyphicon glyphicon-search"></span>
     </div>
-
+    <!-- GOOGLE MAPS API CODE -->
+    <script src="assets/javascript/app2.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwMh07oJLiCVRHzgAgYE5JXlsanwRy9kU&libraries=places&type=gym&callback=initMap"></script>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 </div>
-    
-    
 </body>
+<script src="assets/javascript/app.js" type="text/javascript"></script>
 </html>
