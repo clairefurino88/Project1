@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+#jumbotron {
+    background-color: tomato;
+    text-align: center;
+}
+
+#workouts {
+    background-color: lavender;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+#workoutBtns {
+    text-align: center;
+}
+
+.btn {
+    margin: 0px 20px 0px 20px;
+}
+
+#nutrition {
+    background-color: forestgreen;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#gymFinder {
+    background-color: dodgerblue;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

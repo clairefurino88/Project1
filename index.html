@@ -15,57 +15,74 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <div class="container">
     <!-- Jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron" id="jumbotron">
         <h1>Got Muscles?</h1>
-        <p>Need a routine?  Need a recipe?  Need a gym?  We got you!</p>    
+        <h4>Need a routine?  Need a recipe?  Need a gym?  We got you!</h4>    
     </div>
 
-    <!-- Container for workouts -->
-    <div class="container" id="workouts">
-        <h4>Get your routines here!</h4>
+    <div class"row">
 
-        <!-- Body group buttons -->
-        <div class="row" id="workoutBtns">
-            <button class="btn btn-warning" id="shoulderBtn" type="submit">Shoulders</button>
-            <button class="btn btn-success" id="armsBtn" type="submit">Arms</button>
-            <button class="btn btn-danger" id="chestBtn" type="submit">Chest</button>
-            <button class="btn btn-primary" id="backBtn" type="submit">Back</button>
-            <button class="btn btn-info" id="legsBtn" type="submit">Legs</button>
-            <button class="btn btn-default" id="absBtn" type="submit">Abs</button>
+        <!-- Container for workouts -->
+        <div class="jumbotron" id="workouts">
+            <h3>Get your routines here!</h3>
+
+            <!-- Body group buttons -->
+            <div class="row" id="workoutBtns">
+                <button class="btn btn-warning" id="shoulderBtn" type="submit">Shoulders</button>
+                <button class="btn btn-success" id="armsBtn" type="submit">Arms</button>
+                <button class="btn btn-danger" id="chestBtn" type="submit">Chest</button>
+                <button class="btn btn-primary" id="backBtn" type="submit">Back</button>
+                <button class="btn btn-info" id="legsBtn" type="submit">Legs</button>
+                <button class="btn btn-default" id="absBtn" type="submit">Abs</button>
+            </div>
+
+            <!-- Div for content retrieved from API -->
+            <div id="workoutContentHere"></div>
+
         </div>
 
-        <!-- Div for content retrieved from API -->
-        <div id="workoutContentHere"></div>
     </div>
 
-    <!-- Container for nutrituon -->
-    <div class="container" id="nutrition">
-        <h4>Hungry?</h4>
-    </div>
+    <div class="row">
 
-    <!-- Container for GymFinder -->
-    <div class="container" id="gymFinder">
-        <h4>Nowhere to workout?  Find a place near you!</h4>
+        <div class="col-md-7">
 
-        <!-- Div for content retrieved from API -->
-        <div id="gymFinderContentHere"></div>
-
-        <!-- Input bar and search button -->
-        <div class="row">
-            <div class="col-md-9" id="forVisualsUntilCSSisAdded"></div>
-            <div class="col-md-3">
-                <label for="srchCity">Enter city to find gyms nearest you!</label>
-                <div class="input-group" id="srchCity">
-                    <input type="text" class="form-control" placeholder="City">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Search</button>
-                    </span>
-                </div>
+            <!-- Container for nutrituon -->
+            <div class="jumbotron" id="nutrition">
+                <h3>Hungry?</h3>
             </div>
+
+        </div>
+
+        <div class="col-md-5">
+
+            <!-- Container for GymFinder -->
+            <div class="jumbotron" id="gymFinder">
+                <h3>Nowhere to workout?  Find a place near you!</h3>
+
+                <!-- Div for content retrieved from API -->
+                <div id="gymFinderContentHere"></div>
+
+                <!-- Input bar and search button -->
+                <div class="row">
+                        <label for="srchCity">Enter city to find gyms nearest you!</label>
+                        <div class="input-group" id="srchCity">
+                            <input type="text" class="form-control" placeholder="City">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Search</button>
+                            </span>
+                        </div>
+                </div>
+
+            </div>
+        
         </div>
 
     </div>
