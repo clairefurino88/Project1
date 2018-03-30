@@ -68,7 +68,9 @@
                    position: new google.maps.LatLng(results[i].geometry.location.lat(), results[i].geometry.location.lng()),
                    icon: markerIcon,
                    map: map
+                   
                });
+
            }
        }
    }
@@ -87,3 +89,11 @@
            'Error: Your browser doesn\'t support geolocation.');
        infoWindow.open(map);
    }
+
+   /*var infowindow = new google.maps.InfoWindow({ // Create a new InfoWindow
+    content:&quot;&lt;h3&gt;Snowdown Summit Cafe&lt;/h3&gt;&lt;p&gt;Railway Drive-through available.&lt;/p&gt;&quot; // HTML contents of the InfoWindow
+});
+ 
+google.maps.event.addListener(marker, 'click', function() { // Add a Click Listener to our marker
+    infowindow.open(map,marker); // Open our InfoWindow
+});*/
