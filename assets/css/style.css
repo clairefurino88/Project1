@@ -28,6 +28,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 #recipePic {
   height: 200px;
   width: 200px;
@@ -128,22 +129,10 @@ html, body {
 
 @-webkit-keyframes shine {
   from {
-    -webkit-mask-position: 150%;
-}
-  
-<<<<<<< HEAD
-  @-webkit-keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
+     -webkit-mask-position: 150%;
+ }
     
-    to {
+to {
       -webkit-mask-position: -50%;
     }
   }
-=======
-  to {
-    -webkit-mask-position: -50%;
-  }
-}
->>>>>>> 8ee29ad73310f8e8f9af2d8dc59d4969077ec9dd

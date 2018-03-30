@@ -16,7 +16,8 @@
     //The function Map() is known as a constructor 
 
        map = new google.maps.Map(document.getElementById('map'), {
-           center: { lat: 19.0759837, lng: 72.87765590000004 },
+          
+        center: { lat: 19.0759837, lng: 72.87765590000004 },
            zoom: 16
        });
 
@@ -70,6 +71,7 @@
            origin: new google.maps.Point(0, 0), //google maps parameters for placing the icon image
            anchor: new google.maps.Point(12, 10),
            scaledSize: new google.maps.Size(30, 30)
+
        };                          //radius is in meter
        places.textSearch({ location: pos, radius: 3000, query: 'workout' }, callback); //uses word workout to place the marker image
        function callback(results, status) {
