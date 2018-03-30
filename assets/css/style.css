@@ -9,6 +9,12 @@ body {
   font-family: 'Faster One', cursive;
   font-size: 28px;
 }
+.jumbosmall {
+  background-color: tomato;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
 /************** workout CSS ********************/
 #workouts {
   background-color: lavender;
