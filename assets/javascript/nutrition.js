@@ -23,9 +23,9 @@ function displayRecipe() {
             recipeButton.attr("href", responses[i].source_url);
             recipeImage.attr("src", responses[i].image_url);
             recipeButton.text("View Recipe");
+            recDiv.prepend(title);
             recDiv.prepend(recipeButton);
             recDiv.prepend(recipeImage);
-            recDiv.prepend(title);
             $("#recipeResults").prepend(recDiv);
         }
     })
