@@ -25,9 +25,13 @@ body {
 
 #nutrition {
   background-color: forestgreen;
-  height: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#recipePic {
+  height: 200px;
+  width: 200px;
+  
 }
 
 #map {
