@@ -11,7 +11,7 @@ body {
 
 #workouts {
   background-color: lavender;
-  height: 500px;
+  height: 550px;
   margin-bottom: 10px;
 }
 
@@ -28,14 +28,6 @@ body {
   height: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-#exerciseBtns {
-  background-color: darksalmon;
-}
-
-#exercises {
-  background-color: darkgoldenrod;
 }
 
 #map {
@@ -125,11 +117,17 @@ html, body {
 }
 
 .btn:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-  }
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+}
   
+<<<<<<< HEAD
   @-webkit-keyframes shine {
     from {
       -webkit-mask-position: 150%;
@@ -139,3 +137,9 @@ html, body {
       -webkit-mask-position: -50%;
     }
   }
+=======
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+>>>>>>> 8ee29ad73310f8e8f9af2d8dc59d4969077ec9dd
