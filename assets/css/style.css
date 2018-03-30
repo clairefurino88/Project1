@@ -8,7 +8,9 @@ body {
   text-align: center;
   font-family: 'Faster One', cursive;
   font-size: 28px;
+
 }
+
 .jumbosmall {
   background-color: tomato;
   text-align: center;
@@ -31,50 +33,62 @@ body {
 /************************ NUTRITION CSS *****************************/
 a{
   font-size: 18px;
-  background: salmon;
+  background: #ee5253;
   color: white ;
   border: 1px solid ;
   border-radius: 4px;
 }
 
 #nutrition {
-  background-color: forestgreen;
+  font-family: 'Courgette', cursive;
+  background-color: #2e86de;
   margin: 5% auto;
   width: 100%;
   text-align: center;
+
 }
+
 #newRecipe{
   width: 60%;
 }
+
 #recipeResults{
   width: 100%
 }
+
 #recDiv{
   width: 30%;
   margin-top: 10px;
   margin-right: 5px;
+
 } 
+
 .title{
   text-align: center;
   font-size: 18px;
   height: 75px;
   color: black;
+  margin-bottom: 15px;
 }
 #recipePic {
   margin-top: 5px;
-  height: 200px;
-  width: 200px;
-  
+  height: 175px;
+  width: 175px;
+  border: #ee5253 2px;
+  border-top-left-radius: 25em 4em;
+  border-bottom-right-radius: 25em 4em;
+
+ 
 }
 
 /****************************** MAP CSS **************************/
 #map {
   top: 200px;
-  height: 650px;
-  margin: 5px;
+  height: 350px;
 }
    
 html, body {
+  height: 800px;;
   margin: 10px;
   padding: 0;
 } 
@@ -153,8 +167,6 @@ html, body {
 #target {
   width: 345px;
 }
-
-
 
 
 /******************** Hover Features ****************8**********/
