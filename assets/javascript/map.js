@@ -66,13 +66,14 @@
    function locateGym(map, pos) { //places marker at gyms location
        places = new google.maps.places.PlacesService(map); //uses google operator to find the location
        var markerIcon = {
-           url: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX22676869.jpg',
+           url: 'http://benzlee.com/images/design/gym.jpg',
            size: new google.maps.Size(60, 60),
            origin: new google.maps.Point(0, 0), //google maps parameters for placing the icon image
            anchor: new google.maps.Point(12, 10),
            scaledSize: new google.maps.Size(30, 30)
+        }; 
 
-       };                          //radius is in meter
+                              //radius is in meter
        places.textSearch({ location: pos, radius: 3000, query: 'workout' }, callback); //uses word workout to place the marker image
        function callback(results, status) {
            //clearResults(results);
