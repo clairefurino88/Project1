@@ -64,10 +64,13 @@ a{
 }
 #recipePic {
   margin-top: 5px;
-  height: 200px;
-  width: 200px;
-  border-radius: 20px;
-  border: 5px groove #feca57;
+  height: 175px;
+  width: 175px;
+  border: #ee5253 2px;
+  border-top-left-radius: 25em 4em;
+  border-bottom-right-radius: 25em 4em;
+
+ 
 }
 
 #map {
