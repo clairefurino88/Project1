@@ -140,7 +140,6 @@ $("#shouldersBtn").on("click", function () {
 });
 
 $("#armsBtn").on("click", function () {
-    debugger;
     $("#exerciseBtns").empty();
     $("#exerciseGifs").empty();
     $("#exercises").empty();
@@ -281,7 +280,6 @@ $("#armsBtn").on("click", function () {
 });
 
 $("#chestBtn").on("click", function () {
-    debugger;
     $("#exerciseBtns").empty();
     $("#exerciseGifs").empty();
     $("#exercises").empty();
