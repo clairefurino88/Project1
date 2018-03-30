@@ -9,15 +9,24 @@ function displayRecipe() {
         method: "GET"
     }).then(function (results) {
         // console.log('resuls: ', results);
-         var response = JSON.parse(results);
+        $("#recipeResults").empty();
+        var response = JSON.parse(results);
         var responses = response.recipes;
         // console.log(response);
         console.log(Array.isArray(responses));
-        for (var i = 0 ; i < responses.length; i++){ 
-            var recipeImage = $("<img id='recipePic'>")
+        for (var i = 0 ; i < 10; i++){ 
             console.log(responses[i])
+            var recDiv = $("<div class='col-md-12' id='recDiv'>");
+            var recipeImage = $("<img id='recipePic'><br>")
+            var recipeButton = $("<a href='' target='_blank' id='recipeWindow'></a>")
+            var title = $("<div class='title'>").text(responses[i].title);
+            recipeButton.attr("href", responses[i].source_url);
             recipeImage.attr("src", responses[i].image_url);
-            $("#recipeResults").prepend(recipeImage);
+            recipeButton.text("View Recipe");
+            recDiv.prepend(recipeButton);
+            recDiv.prepend(recipeImage);
+            recDiv.prepend(title);
+            $("#recipeResults").prepend(recDiv);
         }
     })
 }

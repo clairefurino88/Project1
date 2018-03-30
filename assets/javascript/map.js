@@ -1,4 +1,4 @@
-       // This api requires that you consent to location sharing when prompted by your browser. 
+        // This api requires that you consent to location sharing when prompted by your browser. 
        //If you see the error "The Geolocation service failed.", it means you did not give permission 
        //for the browser to locate you.
        var map
