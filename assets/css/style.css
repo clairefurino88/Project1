@@ -1,4 +1,4 @@
-/************** Body CSS ********************/
+/************************** BODY CSS ******************************/
 body {
   background-color: black;
 }
@@ -15,7 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
-/************** workout CSS ********************/
+/************************** WORKOUT CSS ********************************/
 #workouts {
   background-color: lavender;
   margin-bottom: 10px;
@@ -28,7 +28,7 @@ body {
 .btn {
   margin: 5px 25px 5px 25px;
 }
-/************** Nutrition CSS ********************/
+/************************ NUTRITION CSS *****************************/
 a{
   font-size: 18px;
   background: salmon;
@@ -67,7 +67,7 @@ a{
   
 }
 
-/************** MAP CSS ********************/
+/****************************** MAP CSS **************************/
 #map {
   top: 200px;
   height: 650px;
@@ -157,7 +157,7 @@ html, body {
 
 
 
-/************** Hover Features ********************/
+/******************** Hover Features ****************8**********/
 .btn:hover {
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;

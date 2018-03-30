@@ -41,7 +41,11 @@ function renderBox() {
 }
 $("#search").on("click", function (event) {
     event.preventDefault();
-    var recipe = $("#newRecipe").val();
+    var recipe = $("#newRecipe").val().trim()
+
+         if (recipe === "") {
+            return;
+        }
     recipes.push(recipe);
     $("#newRecipe").val("")
     renderBox();
