@@ -1,4 +1,4 @@
-var recipes = ["grilled chicken", "garden salad", "tuna wrap"];
+var recipes = ["grilled chicken", "garden salad", "tuna wrap", "farro", "beet salad"];
 function displayRecipe() {
     //API Key: d685a1e4d3884f01da23f10c9b5c8603 
     // d685a1e4d3884f01da23f10c9b5c8603 
@@ -33,7 +33,7 @@ function displayRecipe() {
 function renderBox() {
     $("#recipeBox").empty();
     for (i = 0; i < recipes.length; i++){
-    var box = $("<button>")
+    var box = $("<button class='btn btn-danger'>")
     box.addClass("food")
     box.attr("data-name", recipes[i]);
     box.text(recipes[i]);
