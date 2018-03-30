@@ -79,7 +79,7 @@ $("#shouldersBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/6014/3884/9752/BBUprightRowM.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Grasp bar with shoulder width or slightly narrower overhand grip.</h6>' + '<h4>Execution</h4>' + '<h6>Pull bar to neck with elbows leading. Allow wrists to flex as bar rises. Lower and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Bar can be recieved from barbell rack, standing behind bar mid-thigh height. See Upright Row Safety.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Grasp bar with shoulder width or slightly narrower overhand grip.</h6>' + '<h4>Execution</h4>' + '<h6>Pull bar to neck with elbows leading. Allow wrists to flex as bar rises. Lower and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Bar can be recieved from barbell rack, standing behind bar mid-thigh height.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -92,7 +92,7 @@ $("#shouldersBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/5114/3884/9771/CBYRaise.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand facing between low pulleys medium width apart, grasp left stirrup with right hand and right stirrup with left hand. Step back slightly away from pulleys and stand upright with cables crossed in front of hips.</h6>' + '<h4>Execution</h4>' + '<h6>With elbows slightly bent, raise arms upward and outward to sides in Y configuration until elbows are approximately lateral to each ear. Lower stirrups forward and downward in reverse pattern. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Maintain fixed slightly bent elbow position throughout exercise. Stirrup is raised by combining shoulder abduction and flexion. Slight shoulder external rotation may occur with elbows bent. Front Deltoid assists shoulder flexion if upper arm angle is slightly high. Rear Deltoid assists shoulder horizontal abduction if upper arm angle is slightly low. Also see Cable Seated Y Raise on dual pulley Cable Row machine.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand facing between low pulleys medium width apart, grasp left stirrup with right hand and right stirrup with left hand. Step back slightly away from pulleys and stand upright with cables crossed in front of hips.</h6>' + '<h4>Execution</h4>' + '<h6>With elbows slightly bent, raise arms upward and outward to sides in Y configuration until elbows are approximately lateral to each ear. Lower stirrups forward and downward in reverse pattern. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Maintain fixed slightly bent elbow position throughout exercise. Stirrup is raised by combining shoulder abduction and flexion. Slight shoulder external rotation may occur with elbows bent. Front Deltoid assists shoulder flexion if upper arm angle is slightly high. Rear Deltoid assists shoulder horizontal abduction if upper arm angle is slightly low.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -105,7 +105,7 @@ $("#shouldersBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/5414/3884/9944/BBRearDeltRow.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Bend knees slightly and bend over bar with back straight, approximately horizontal. Grasp bar with wide overhand grip.</h6>' + '<h4>Execution</h4>' + '<h6>Keeping upper arm perpendicular to torso, pull barbell up toward upper chest until upper arms are just beyond horizontal. Return and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>If upper arm travels closer than perpendicular to trunk, latissimus dorsi becomes involved. Elbows should be raised directly lateral to shoulders. Positioning torso at 45° is not sufficient angle to target rear deltoids. Keep torso bent over approximately horizontal. Knees are bent in effort to keep low back straight (See Hamstring Inflexibility). If low back becomes rounded due to tight hamstrings, either knees should be bent more or torso may not be positioned as low. If low back is rounded due to poor form, deadlift weight to standing position and lower torso into horizontal position with knees bent and back straight. Much lighter resistance is required as Barbell Bent-over Row.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Bend knees slightly and bend over bar with back straight, approximately horizontal. Grasp bar with wide overhand grip.</h6>' + '<h4>Execution</h4>' + '<h6>Keeping upper arm perpendicular to torso, pull barbell up toward upper chest until upper arms are just beyond horizontal. Return and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>If upper arm travels closer than perpendicular to trunk, latissimus dorsi becomes involved. Elbows should be raised directly lateral to shoulders. Positioning torso at 45° is not sufficient angle to target rear deltoids. Keep torso bent over approximately horizontal. Knees are bent in effort to keep low back straight. If low back becomes rounded due to tight hamstrings, either knees should be bent more or torso may not be positioned as low. If low back is rounded due to poor form, deadlift weight to standing position and lower torso into horizontal position with knees bent and back straight. Much lighter resistance is required as Barbell Bent-over Row.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -131,7 +131,7 @@ $("#shouldersBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/5914/3886/3474/BBShrug.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand holding barbell with overhand or mixed grip; shoulder width or slightly wider.</h6>' + '<h4>Execution</h4>' + '<h6>Elevate shoulders as high as possible. Lower and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Since this movement becomes more difficult as full shoulder elevation is achieved, height criteria for shoulder elevation may be needed. For example, raising shoulders until slope of shoulders becomes horizontal may be considered adequate depending upon individual body structure and range of motion with lighter weight. Also see ROM Criteria and Shoulder Shrug Errors.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand holding barbell with overhand or mixed grip; shoulder width or slightly wider.</h6>' + '<h4>Execution</h4>' + '<h6>Elevate shoulders as high as possible. Lower and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Since this movement becomes more difficult as full shoulder elevation is achieved, height criteria for shoulder elevation may be needed. For example, raising shoulders until slope of shoulders becomes horizontal may be considered adequate depending upon individual body structure and range of motion with lighter weight.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -346,7 +346,7 @@ $("#chestBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/6114/3885/7807/BWChestDip.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Mount wide dip bar with oblique grip (bar diagonal under palm), arms straight with shoulders above hands. Bend knees and hips slightly.</h6>' + '<h4>Execution</h4>' + '<h6>Lower body by bending arms, allowing elbows to flare out to sides. When slight stretch is felt in chest or shoulders, push body up until arms are straight. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6><strong>Easier: <Strong>To decrease difficulty, get assistance from machine or training partner. Also try performing movement between two benches or self assisted by placing feet on bench or elevation.</h6>' + '<h6><strong>Harder<strong>Added weight can be placed on dip belt or dumbbell can be placed between ankles to increase intensity.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Mount wide dip bar with oblique grip (bar diagonal under palm), arms straight with shoulders above hands. Bend knees and hips slightly.</h6>' + '<h4>Execution</h4>' + '<h6>Lower body by bending arms, allowing elbows to flare out to sides. When slight stretch is felt in chest or shoulders, push body up until arms are straight. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6><strong>Easier: <Strong>To decrease difficulty, get assistance from machine or training partner. Also try performing movement between two benches or self assisted by placing feet on bench or elevation.</h6>' + '<h6><strong>Harder: <strong>Added weight can be placed on dip belt or dumbbell can be placed between ankles to increase intensity.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -372,7 +372,7 @@ $("#chestBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/8014/3885/7881/DBPullover.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Lie on upper back perpendicular to bench. Flex hips slightly. Grasp one dumbbell from behind or from side with both hands under inner plate of dumbbell. Position dumbbell over chest with elbows slightly bent.</h6>' + '<h4>Execution</h4>' + '<h6>Keeping elbows slightly bent throughout movement, lower dumbbell over and beyond head until upper arms are in-line with torso. Pull dumbbell up and over chest. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Lower body extending off of bench acts as counter balance to resistance and keeps upper back fixed on bench. Avoid hips from raising up significantly. Actual range of motion is dependent upon individual shoulder flexibility. Keep elbows fixed at small bend throughout exercise. See suggested mount & dismount.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Lie on upper back perpendicular to bench. Flex hips slightly. Grasp one dumbbell from behind or from side with both hands under inner plate of dumbbell. Position dumbbell over chest with elbows slightly bent.</h6>' + '<h4>Execution</h4>' + '<h6>Keeping elbows slightly bent throughout movement, lower dumbbell over and beyond head until upper arms are in-line with torso. Pull dumbbell up and over chest. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Lower body extending off of bench acts as counter balance to resistance and keeps upper back fixed on bench. Avoid hips from raising up significantly. Actual range of motion is dependent upon individual shoulder flexibility. Keep elbows fixed at small bend throughout exercise.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -385,7 +385,7 @@ $("#chestBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/8714/3885/7822/BWPushupWide.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6></h6>' + '<h4>Execution</h4>' + '<h6></h6>' + '<h4>Comments</h4>' + '<h6>Both upper and lower body must be kept straight throughout movement. See close grip push-up. Also see push-up test calculator.</h6>' + '<h6><strong>Easier</strong>Resistance can be reduced by performing push-ups with knees bent on floor or placing hands on elevated horizontal bar, in between narrow doorway, or edge of elevated surface.</h6>' + '<h6><strong>Harder</strong>For greater challenge, elevate feet, have partner hold weight on back, perform Chest Dips on parallel bars, or plyometric version for more power.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Lie prone on floor with hands slightly wider than shoulder width. Raise body up off floor by extending arms with body straight.</h6>' + '<h4>Execution</h4>' + '<h6>Keeping body straight, lower body to floor by bending arms. Push body up until arms are extended. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Both upper and lower body must be kept straight throughout movement.</h6>' + '<h6><strong>Easier: </strong>Resistance can be reduced by performing push-ups with knees bent on floor or placing hands on elevated horizontal bar, in between narrow doorway, or edge of elevated surface.</h6>' + '<h6><strong>Harder: </strong>For greater challenge, elevate feet, have partner hold weight on back, perform Chest Dips on parallel bars, or plyometric version for more power.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -398,7 +398,7 @@ $("#chestBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/7114/3885/7428/BWFarPikePress.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Kneel on two benches positioned side by side slightly apart at end nearest head. Place hands on ends of benches. With forefeet on opposite ends of bench, raise rear end high up with arms, back, and knees straight.</h6>' + '<h4>Execution</h4>' + '<h6>Lower head between ends of benches by bending arms. Push body back up to original position by extending arms. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Pike Push-up (for upper chest) differs from Pike Press (for front delts) in that, feet are further away from hands so body is less inverted in lowest position.</h6>' + '<h6><strong>Easier</strong>Resistance can be reduced by performing exercise on bench or apparatus with hands positioned higher than feet. Keep in mind, this specialized movement may not be necessary since upper chest can be utilized somewhat during pushup movements.</h6>' + '<h6><strong>Harder</strong>For greater challenge, place feet closer to hands, emphasizing front delts.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Kneel on two benches positioned side by side slightly apart at end nearest head. Place hands on ends of benches. With forefeet on opposite ends of bench, raise rear end high up with arms, back, and knees straight.</h6>' + '<h4>Execution</h4>' + '<h6>Lower head between ends of benches by bending arms. Push body back up to original position by extending arms. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Pike Push-up (for upper chest) differs from Pike Press (for front delts) in that, feet are further away from hands so body is less inverted in lowest position.</h6>' + '<h6><strong>Easier: </strong>Resistance can be reduced by performing exercise on bench or apparatus with hands positioned higher than feet. Keep in mind, this specialized movement may not be necessary since upper chest can be utilized somewhat during pushup movements.</h6>' + '<h6><strong>Harder: </strong>For greater challenge, place feet closer to hands, emphasizing front delts.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -411,7 +411,7 @@ $("#chestBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/9114/3885/7968/LVFly.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Sit on machine with back on pad. If available, push foot lever until padded lever moves forward. Place forearms on padded lever. Position upper arms approximately parallel. Release foot lever.</h6>' + '<h4>Execution</h4>' + '<h6>Push levers together. Return until chest muscles are stretched. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>None</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Sit on machine with back on pad. If available, push foot lever until padded lever moves forward. Place forearms on padded lever. Position upper arms approximately parallel. Release foot lever.</h6>' + '<h4>Execution</h4>' + '<h6>Push levers together. Return until chest muscles are stretched. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>None.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -486,7 +486,7 @@ $("#backBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/5414/3885/4808/BWWideGripChinup.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6></h6>' + '<h4>Execution</h4>' + '<h6></h6>' + '<h4>Comments</h4>' + '<h6>Range of motion will be compromised if grip is too wide.</h6>' + '<h6><strong>Easier</strong>To decrease difficulty, use assisted machine, assisting partner, or self assisted by placing feet on bench or floor under bar.</h6>' + '<h6><strong>Harder</strong>Added weight can be placed on dip belt or dumbbell can be placed between ankles to increase intensity.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Sit on inside of one of two benches placed parallel, slightly less than a legs length away. Place hands on edge of bench, straighten arms, slide rear end off of bench, and position heels on adjacent bench with legs straight.</h6>' + '<h4>Execution</h4>' + '<h6>Lower body by bending arms until slight stretch is felt in chest or shoulder, or rear end touches floor. Raise body and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Range of motion will be compromised if grip is too wide.</h6>' + '<h6><strong>Easier: </strong>To decrease difficulty, use assisted machine, assisting partner, or self assisted by placing feet on bench or floor under bar.</h6>' + '<h6><strong>Harder: </strong>Added weight can be placed on dip belt or dumbbell can be placed between ankles to increase intensity.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -525,7 +525,7 @@ $("#backBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/1014/3885/4889/LVIronCross.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand on platform and grasp handles to sides with palms down grip.</h6>' + '<h4>Execution</h4>' + '<h6>With arms straight, pull lever handles down below hips. Return lever handles upward just above shoulder high, or just before slight pressure in shoulder is felt. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Platform should be adjusted so shoulder joint and girdle are approximate height as lever fulcrum. Also See Bent-over Fly on Iron Cross Machine.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Stand on platform and grasp handles to sides with palms down grip.</h6>' + '<h4>Execution</h4>' + '<h6>With arms straight, pull lever handles down below hips. Return lever handles upward just above shoulder high, or just before slight pressure in shoulder is felt. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Platform should be adjusted so shoulder joint and girdle are approximate height as lever fulcrum.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -551,7 +551,7 @@ $("#backBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/3514/3885/4815/CBCloseGripPulldown.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Grasp parallel cable attachment. Sit with thighs under supports.</h6>' + '<h4>Execution</h4>' + '<h6>Pull down cable attachment to upper chest. Return until arms and shoulders are fully extended. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>None</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Grasp parallel cable attachment. Sit with thighs under supports.</h6>' + '<h4>Execution</h4>' + '<h6>Pull down cable attachment to upper chest. Return until arms and shoulders are fully extended. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>None.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -613,7 +613,7 @@ $("#legsBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/6414/3885/0702/BBSquatPowerlift.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>From rack with barbell at upper chest height, position bar low on back of shoulders. Grasp barbell to sides. Dismount bar from rack and stand with wide stance.</h6>' + '<h4>Execution</h4>' + '<h6>Squat down by bending hips back while allowing knees to bend forward slightly, keeping back straight and knees pointed same direction as feet. Descend until thighs are just past parallel to floor. Extend hips and knees until legs are straight. Return and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Keep head facing forward, back straight and feet flat on floor; equal distribution of weight through forefoot and heel. Knees should point same direction as feet throughout movement. At bottom of squat, crease at hips must be lower than top of knee cap</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>From rack with barbell at upper chest height, position bar low on back of shoulders. Grasp barbell to sides. Dismount bar from rack and stand with wide stance.</h6>' + '<h4>Execution</h4>' + '<h6>Squat down by bending hips back while allowing knees to bend forward slightly, keeping back straight and knees pointed same direction as feet. Descend until thighs are just past parallel to floor. Extend hips and knees until legs are straight. Return and repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Keep head facing forward, back straight and feet flat on floor; equal distribution of weight through forefoot and heel. Knees should point same direction as feet throughout movement. At bottom of squat, crease at hips must be lower than top of knee cap.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -678,7 +678,7 @@ $("#legsBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/1314/3885/0791/LVBentOverRearKickPL.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Lean over wide padded area, place forearms on padded arm rest, and grip handles. Bend knee and position foot against lever platform.</h6>' + '<h4>Execution</h4>' + '<h6>Push platform back by extending leg back. Return leg to original position. Repeat. Continue with opposite leg.</h6>' + '<h4>Comments</h4>' + '<h6>None</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Lean over wide padded area, place forearms on padded arm rest, and grip handles. Bend knee and position foot against lever platform.</h6>' + '<h4>Execution</h4>' + '<h6>Push platform back by extending leg back. Return leg to original position. Repeat. Continue with opposite leg.</h6>' + '<h4>Comments</h4>' + '<h6>None.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -753,7 +753,7 @@ $("#absBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/9214/3885/1513/BWKneelingWheelRollout.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6></h6>' + '<h4>Execution</h4>' + '<h6></h6>' + '<h4>Comments</h4>' + '<h6>Keep elbows straight or nearly straight throughout exercise. Also known as Wheel Kneeling Rollout. Rectus Abdominis and Obliques practically contract isometrically since little waist flexion occurs under resistance. With no waist flexion, Rectus Abdominis and External Oblique act to stabilize pelvis and waist during hip flexion. See target muscle of rollout question. Also see Spot Reduction Myth and Lower Ab Myth.</h6>' + '<h6><strong>Easier</strong>Descending only part way down is much easier and can be performed in this way to progress into exercise. Movement can also be made easier by performing exercise up an incline (i.e. end of incline ab board or decline bench) or assisted by cable.</h6>' + '<h6><strongHarderstrong>Make sure to roll out until shoulder is fully extended through full range of motion. Exercise can be made much more challenging by performing exercise on feet with knees straight, up an incline, progressing to floor.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Kneel on floor or mat. Grasp handles on wheel to each side with overhand grip. Position wheel near front of knees and lean over wheel with arms extended downward, supporting upper body.</h6>' + '<h4>Execution</h4>' + '<h6>With arms straight, roll wheel out as far as possible. Lower body gently to floor extending arms forward. Raise body back up by flexing hips and pulling arms back to original position. Return until hips are extended. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Keep elbows straight or nearly straight throughout exercise. Also known as Wheel Kneeling Rollout. Rectus Abdominis and Obliques practically contract isometrically since little waist flexion occurs under resistance. With no waist flexion, Rectus Abdominis and External Oblique act to stabilize pelvis and waist during hip flexion.</h6>' + '<h6><strong>Easier: </strong>Descending only part way down is much easier and can be performed in this way to progress into exercise. Movement can also be made easier by performing exercise up an incline (i.e. end of incline ab board or decline bench) or assisted by cable.</h6>' + '<h6><strong>Harder: </strong>Make sure to roll out until shoulder is fully extended through full range of motion. Exercise can be made much more challenging by performing exercise on feet with knees straight, up an incline, progressing to floor.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
@@ -766,7 +766,7 @@ $("#absBtn").on("click", function () {
         var gif = $("<img src='https://www.exrx.net/application/files/8414/3886/1207/BWSitupNeck.gif'>")
 
         var instruct = $('<div>')
-        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Hook feet under foot brace or secure low overhang. Lie supine on floor or bench with hips bent. Place hands behind neck or on side of neck</h6>' + '<h4>Execution</h4>' + '<h6>Raise torso from bench by bending waist and hips. Return until back of shoulders contact incline board. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Feet can be held down by partner instead of foot bar. Certain individuals may need to keep their neck in neutral position with space between their chin and sternum. If upper back does not come completely down at end of movement, abdominal muscles may only be isometrically involved in exercise. Pectineus, Adductor Longus, and Brevis do not assist in hip flexion since hips are already initially bent.</h6>' + '<h6><stronger>Easier: </stronger>Movement can be made easier by placing arms further down away from head.</h6>' + '<h6><strong>Harder: </strong>Exercise can be made more challenging by placing hands further up on head or beyond head.</h6>');
+        instruct.html('<h3>Instructions<h3>' + '<h4>Preperation<h4>' + '<h6>Hook feet under foot brace or secure low overhang. Lie supine on floor or bench with hips bent. Place hands behind neck or on side of neck.</h6>' + '<h4>Execution</h4>' + '<h6>Raise torso from bench by bending waist and hips. Return until back of shoulders contact incline board. Repeat.</h6>' + '<h4>Comments</h4>' + '<h6>Feet can be held down by partner instead of foot bar. Certain individuals may need to keep their neck in neutral position with space between their chin and sternum. If upper back does not come completely down at end of movement, abdominal muscles may only be isometrically involved in exercise. Pectineus, Adductor Longus, and Brevis do not assist in hip flexion since hips are already initially bent.</h6>' + '<h6><stronger>Easier: </stronger>Movement can be made easier by placing arms further down away from head.</h6>' + '<h6><strong>Harder: </strong>Exercise can be made more challenging by placing hands further up on head or beyond head.</h6>');
 
         $("#exerciseGifs").append(gif);
         $("#exercises").append(instruct);
