@@ -4,10 +4,10 @@ body {
 }
 
 #jumbotron {
-    background-color: tomato;
-    text-align: center;
-    font-family: 'Faster One', cursive;
-    font-size: 28px;
+  background-color: tomato;
+  text-align: center;
+  font-family: 'Faster One', cursive;
+  font-size: 28px;
 }
 /************** workout CSS ********************/
 #workouts {
