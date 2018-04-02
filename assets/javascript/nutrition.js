@@ -1,4 +1,8 @@
+
+//array of recipes to be generated as boxes and all searches will push to this array
 var recipes = ["grilled chicken", "garden salad", "tuna wrap", "farro", "beet salad"];
+
+// function to display search results / ajax request
 function displayRecipe() {
     //API Key: d685a1e4d3884f01da23f10c9b5c8603 
     // d685a1e4d3884f01da23f10c9b5c8603 
@@ -9,16 +13,22 @@ function displayRecipe() {
         method: "GET"
     }).then(function (results) {
         // console.log('resuls: ', results);
+        //empties the previous search results
         $("#recipeResults").empty();
+        //turns the results into a string
         var response = JSON.parse(results);
         var responses = response.recipes;
         // console.log(response);
-        console.log(Array.isArray(responses));
+        //for loop using i<10 to limit the search results to 10
         for (var i = 0 ; i < 10; i++){ 
             console.log(responses[i])
+            //create a new div for all the results to go into
             var recDiv = $("<div class='col-md-12' id='recDiv'>");
+            //create an image
             var recipeImage = $("<img id='recipePic'><br>")
+            //create a link to the actually recipe
             var recipeButton = $("<a href='' target='_blank' id='recipeWindow'></a>")
+            //get the name of the dish
             var title = $("<div class='title'>").text(responses[i].title);
             recipeButton.attr("href", responses[i].source_url);
             recipeImage.attr("src", responses[i].image_url);
@@ -30,6 +40,8 @@ function displayRecipe() {
         }
     })
 }
+
+//shows the recipes as boxes to click on
 function renderBox() {
     $("#recipeBox").empty();
     for (i = 0; i < recipes.length; i++){
@@ -39,6 +51,8 @@ function renderBox() {
     box.text(recipes[i]);
     $("#recipeBox").append(box);}
 }
+
+//pushes the search to the recipe array
 $("#search").on("click", function (event) {
     event.preventDefault();
     var recipe = $("#newRecipe").val().trim()
@@ -50,5 +64,7 @@ $("#search").on("click", function (event) {
     $("#newRecipe").val("")
     renderBox();
 })
+
+//displays the results when the box is clicked
 $(document).on("click", ".food", displayRecipe);
 renderBox();
