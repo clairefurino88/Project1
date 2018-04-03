@@ -1,1 +1,3 @@
 # Project1
+
+This is an application for users who want to live a healthy lifestyle. This application provides the user with a variety of workouts geared towards different parts of the body including shoulders, chest, back, legs, and arms. This application also provides the user with healthy recipes for any food via an API. The bottom of this application features a google maps gym locator in any given town as well as directions to reach that location via an API.
