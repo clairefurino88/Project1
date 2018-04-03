@@ -77,9 +77,8 @@
                               //radius is in meter
        places.textSearch({ location: pos, radius: 3000, query: 'workout' }, callback); //uses word workout to place the marker image
        function callback(results, status) {
-           //clearResults(results);
+          
            clearMarkers();
-           console.log(results);
            markers = [];
            for (var i = 0; i < results.length; i++) {
                // Use marker animation to drop the icons incrementally on the map.

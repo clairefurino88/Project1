@@ -53,6 +53,7 @@ function displayRecipe() {
             recDiv.prepend(favoriteBtn);
             $("#recipeResults").prepend(recDiv);
             $("#recipeResults").show();
+            $("#favorites").hide();
         }
 
             $(".addFavorite").on("click", function(event) {
