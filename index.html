@@ -7,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 1</title>
     <link rel="icon" href="assets/images/muscleArmIcon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- jQuery -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -27,16 +29,13 @@
             <h4>Need a routine? Need a recipe? Need a gym? We got you!</h4>
         </div>
     </div>
-
     <div class="container">
-
         <!-- Container for workouts -->
         <div class="jumbotron" id="workouts">
             <h3>Get your routines here!</h3>
-
             <!-- Body group buttons -->
             <div class="row" id="workoutBtnsRow">
-                <div class="col-xs-12" id="workoutBtns">
+                <div class="col-md-12" id="workoutBtns">
                     <button class="btn btn-warning" id="shouldersBtn" type="submit">Shoulders</button>
                     <button class="btn btn-success" id="armsBtn" type="submit">Arms</button>
                     <button class="btn btn-danger" id="chestBtn" type="submit">Chest</button>
@@ -45,29 +44,26 @@
                     <button class="btn btn-default" id="absBtn" type="submit">Abs</button>
                 </div>
             </div>
-
             <div class="row" id="workoutContent">
-                <div class="col-xs-2" id="exerciseBtns">
+                <div class="col-md-2" id="exerciseBtns">
                     <!-- Buttons with actual exercises generated from body group buttons goes here -->
                 </div>
-                <div class="col-xs-2" id="exerciseGifs">
+                <div class="col-md-2" id="exerciseGifs">
                     <!-- Gifs of exercise generated from exercise buttons -->
                 </div>
-                <div class="col-xs-8" id="exercises">
+                <div class="col-md-8" id="exercises">
                     <!-- Exercises generated from exercise buttons -->
                 </div>
             </div>
-
         </div>
-
-
-        <!-- <div class="container"> -->
+        <!-- Container for nutrituon -->
         <div class="jumbotron" id="nutrition">
             <div class="row">
-                <h3>Hungry?</h3>
+                <h3>Find Fresh New Recipes To Try At Home</h3>
             </div>
             <div class="row">
                 <div class="col-md-12" id="recipeSearch">
+                    <button class="favorite">View Bookmarked</button>
                     <form id="inputForm">
                         <input type="text" placeholder="Enter Recipe Here" id="newRecipe">
                         <input type="submit" value="Search Recipe" id="search">
@@ -75,17 +71,26 @@
                 </div>
                 <div class="row" id="recipeBox">
                 </div>
+                
+                <div class="row" id="favorites">
+
+
+                </div>
+            
             </div>
             <div class="row" id="recipeResults">
             </div>
+
+
         </div>
 
 
-
     </div>
-
-
-
+    <!-- Javascript for workouts -->
+    <script src="assets/javascript/workout.js" type="text/javascript"></script>
+    <!-- Javascript for nutrition -->
+    <!--<script src="assets/javascript/nutrition.js" type="text/javascript"></script>-->
+    <script src="assets/javascript/nutrition-test.js" type="text/javascript"></script>
     <!-- //////////////////////////////////////// This is for the map //////////////////////////////////////// -->
     <input id="pac-input" class="controls" type="text" placeholder="Search City for Gym">
     <div id="map">
@@ -93,27 +98,12 @@
         <span class="search glyphicon glyphicon-search"></span>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-
-    <!-- Javascript for workouts -->
-    <script src="assets/javascript/workout.js" type="text/javascript"></script>
-
-    <!-- Javascript for nutrition -->
-    <script src="assets/javascript/nutrition.js" type="text/javascript"></script>
     <!-- GOOGLE MAPS API CODE -->
     <!-- The async attribute lets the browser render the rest of your website while the Maps JavaScript  -->
     <!-- API loads. When the API is ready, it will call the function specified using the callback parameter. -->
     <script src="assets/javascript/map.js" type="text/javascript"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwMh07oJLiCVRHzgAgYE5JXlsanwRy9kU&libraries=places&type=gym&callback=initMap"></script>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
 </body>
 
 </html>

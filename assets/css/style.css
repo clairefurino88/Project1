@@ -1,8 +1,7 @@
-/************** Body CSS ********************/
+/************************** BODY CSS ******************************/
 body {
   background-color: black;
 }
-
 #jumbotron {
   background-color: tomato;
   text-align: center;
@@ -15,37 +14,46 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
-/************** workout CSS ********************/
+/************************** WORKOUT CSS ********************************/
 #workouts {
   background-color: lavender;
   margin-bottom: 10px;
-  
 }
-
 #workoutBtns {
   text-align: center;
 }
-
 .btn {
   margin: 5px 25px 5px 25px;
 }
-/************** Nutrition CSS ********************/
+/************************ NUTRITION CSS *****************************/
 a{
   font-size: 18px;
-  background: salmon;
+  background: #ee5253;
   color: white ;
-  border: 1px solid ;
-  border-radius: 4px;
+  height: 25px;
+  width: 100px;
+  border-top-left-radius: 25em 4em;
+  border-bottom-right-radius: 25em 4em;
 }
-
 #nutrition {
-  background-color: forestgreen;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2e86de;
   margin: 5% auto;
   width: 100%;
   text-align: center;
 }
 #newRecipe{
   width: 60%;
+}
+.food{
+border-radius: 10px ;
+background: #ff9f43;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
 }
 #recipeResults{
   width: 100%
@@ -60,22 +68,25 @@ a{
   font-size: 18px;
   height: 75px;
   color: black;
-}
+  margin-bottom: 15px;
+} 
 #recipePic {
   margin-top: 5px;
-  height: 200px;
-  width: 200px;
-  
+  height: 175px;
+  width: 175px;
+  border: #ee5253 2px;
+  border-top-left-radius: 25em 4em;
+  border-bottom-right-radius: 25em 4em;
+ 
 }
-
-/************** MAP CSS ********************/
+/****************************** MAP CSS **************************/
 #map {
   top: 200px;
-  height: 650px;
-  margin: 5px;
+  height: 500px;
 }
    
 html, body {
+  height: 800px;;
   margin: 10px;
   padding: 0;
 } 
@@ -108,7 +119,6 @@ html, body {
   background-color: #fff;
   font-family: Roboto;
 }
-
 #pac-container {
   padding-bottom: 12px;
   margin-right: 12px;
@@ -118,7 +128,6 @@ html, body {
   display: inline-block;
   padding: 5px 11px;
 }
-
  .pac-controls label {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -138,7 +147,6 @@ html, body {
   border: 1px solid #fff;
   border-radius: 4px;
 }
-
 #pac-input:focus {
   border-color: #4d90fe;
 }
@@ -150,21 +158,15 @@ html, body {
   font-weight: 500;
   padding: 6px 12px;
 }
-
 #target {
   width: 345px;
 }
-
-
-
-
-/************** Hover Features ********************/
+/******************** Hover Features ****************8**********/
 .btn:hover {
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
-
 @-webkit-keyframes shine {
   from {
      -webkit-mask-position: 150%;
