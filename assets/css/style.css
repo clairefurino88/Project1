@@ -31,7 +31,7 @@ body {
   margin: 5px 25px 5px 25px;
 }
 /************************ NUTRITION CSS *****************************/
-a{
+#recipeWindow {
   font-size: 18px;
   background: #ee5253;
   color: white ;
