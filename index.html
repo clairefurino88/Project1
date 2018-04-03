@@ -26,8 +26,8 @@
     <!-- Jumbotron -->
     <div class="jumbotron" id="jumbotron">
         <h1>Got Muscles?</h1>
-        <div class= "jumbosmall">
-                <h4>Need a routine? Need a recipe? Need a gym? We got you!</h4>
+        <div class="jumbosmall">
+            <h4>Need a routine? Need a recipe? Need a gym? We got you!</h4>
         </div>
     </div>
 
@@ -65,22 +65,25 @@
 
         <!-- Container for nutrituon -->
         <div class="jumbotron" id="nutrition">
-                <div class="row">
-                    <h3>Find Fresh New Recipes To Try At Home</h3>
+            <div class="row">
+                <h3>Find Fresh New Recipes To Try At Home</h3>
+            </div>
+            <div class="row">
+                <div class="bcol-md-12" id="recipeSearch">
+                    <button class="btn btn-warning favorite">View Bookmarked</button>
+                    <form id="inputForm">
+                        <input type="text" placeholder="Enter Recipe Here" id="newRecipe">
+                        <input type="submit" value="Search Recipe" id="search">
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" id="recipeSearch">
-                        <form id="inputForm">
-                            <input type="text" placeholder="Enter Recipe Here" id="newRecipe">
-                            <input type="submit" value="Search Recipe" id="search">
-                        </form>
-                    </div>
-                    <div class="row" id="recipeBox">
-                    </div>
-                </div>
-                <div class="row" id="recipeResults">
+                <div class="row" id="recipeBox">
                 </div>
             </div>
+            <div class="row" id="favorites">
+            </div>
+            <div class="row" id="recipeResults">
+            </div>
+        </div>
 
 
 
@@ -98,7 +101,7 @@
         <input type="text" placeholder="Search here">
         <span class="search glyphicon glyphicon-search"></span>
     </div>
-  
+
     <!-- GOOGLE MAPS API CODE -->
     <!-- The async attribute lets the browser render the rest of your website while the Maps JavaScript  -->
     <!-- API loads. When the API is ready, it will call the function specified using the callback parameter. -->
