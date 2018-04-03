@@ -32,11 +32,11 @@ function displayRecipe() {
         for (var i = 0; i < 10; i++) {
             console.log(responses[i])
             //create a new div for all the results to go into
-            var recDiv = $("<div class='col-md-12' id='recDiv'>");
+            var recDiv = $("<div class='col-md-3 animated jello' id='recDiv'>");
             //create an image
             var recipeImage = $("<img id='recipePic'><br>")
             //create favorites button
-            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Bookmark as Favorite</button>")
+            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Bookmark the Recipe</button>")
             //create a link to the actually recipe
             var recipeButton = $("<a href='' target='_blank' id='recipeWindow'></a>")
             //get the name of the dish
@@ -73,23 +73,7 @@ function displayRecipe() {
                 console.log(favorite)
 
                
-                    // event.preventDefault();
-                    // $("#favorites").show();
-            
-                    // $("#favorites").empty();
 
-                    // var favorites = JSON.parse(localStorage.getItem("favorites"));
-                    // for (i = 0; i < favorites.length; i++) {
-
-                    //     var favRecipe = $("recDiv, recipeImage, recipeButton, title")
-
-                    //     favRecipe.attr("src", favorites[i]);
-                    //     console.log(favRecipe.attr("src"));
-                    //     $("#favorites").prepend(favRecipe);
-                    // }
-
-
-                
             })
         
 
@@ -118,9 +102,9 @@ $(".favorite").on("click", function(event){
     var favorites = JSON.parse(localStorage.getItem("favorites"))
     for(i=0; i < favorites.length; i++){
 
-    var bookmarkDiv = $("<div class='col-md-4 bookmarkDiv'>");
+    var bookmarkDiv = $("<div class='col-md-3 bookmarkDiv animated jello'>");
     var recTitle = $("<div class='title'>");
-    var recImg = $("<img id='recipePic'><br>");
+    var recImg = $("<img  id='recipePic'><br>");
     var recSrc = $("<a href='' target ='_blank' id='recipeWindow'>");
 
     recImg.attr("src", favorites[i].src);
