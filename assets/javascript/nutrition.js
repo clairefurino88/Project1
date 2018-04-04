@@ -7,24 +7,20 @@ if(fav !== null ){
 for (i=0; i< fav.length; i++){
     favorites.push(fav[i]);
 }}
-//$("#favorites").hide();
 // function to display search results / ajax request
 function displayRecipe() {
     //API Key: d685a1e4d3884f01da23f10c9b5c8603 
-    // d685a1e4d3884f01da23f10c9b5c8603 
     var search = $(this).attr("data-name")
     var queryUrl = "https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=d685a1e4d3884f01da23f10c9b5c8603&q=" + search
     $.ajax({
         url: queryUrl,
         method: "GET"
     }).then(function (results) {
-        // console.log('resuls: ', results);
         //empties the previous search results
         $("#recipeResults").empty();
         //turns the results into a string
         var response = JSON.parse(results);
         var responses = response.recipes;
-        // console.log(response);
         //for loop using i<10 to limit the search results to 10
         for (var i = 0; i < 10; i++) {
             console.log(responses[i])
