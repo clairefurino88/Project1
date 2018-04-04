@@ -1,12 +1,9 @@
 //array of recipes to be generated as boxes and all searches will push to this array
 var recipes = ["grilled chicken", "garden salad", "tuna wrap", "farro", "beet salad"];
 var favorites = [];
-
-
 var fav =JSON.parse(localStorage.getItem("favorites"))
 if(fav !== null ){
     
-
 for (i=0; i< fav.length; i++){
     favorites.push(fav[i]);
 }}
@@ -32,11 +29,11 @@ function displayRecipe() {
         for (var i = 0; i < 10; i++) {
             console.log(responses[i])
             //create a new div for all the results to go into
-            var recDiv = $("<div class='col-md-12' id='recDiv'>");
+            var recDiv = $("<div class='col-md-3 animated jello' id='recDiv'>");
             //create an image
             var recipeImage = $("<img id='recipePic'><br>")
             //create favorites button
-            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Bookmark as Favorite</button>")
+            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Bookmark the Recipe</button>")
             //create a link to the actually recipe
             var recipeButton = $("<a href='' target='_blank' id='recipeWindow'></a>")
             //get the name of the dish
@@ -55,48 +52,24 @@ function displayRecipe() {
             $("#recipeResults").show();
             $("#favorites").hide();
         }
-
             $(".addFavorite").on("click", function(event) {
                 event.preventDefault();
                 console.log(this)
-
                
                 var favorite = {
                     href: $(this).attr("href"), 
                     src: $(this).attr("src"),
                     title:$(this).attr("title")
                 }
-
                 favorites.push(favorite);
                 console.log(favorites)
                 localStorage.setItem("favorites", JSON.stringify(favorites))
                 console.log(favorite)
-
                
-                    // event.preventDefault();
-                    // $("#favorites").show();
-            
-                    // $("#favorites").empty();
-
-                    // var favorites = JSON.parse(localStorage.getItem("favorites"));
-                    // for (i = 0; i < favorites.length; i++) {
-
-                    //     var favRecipe = $("recDiv, recipeImage, recipeButton, title")
-
-                    //     favRecipe.attr("src", favorites[i]);
-                    //     console.log(favRecipe.attr("src"));
-                    //     $("#favorites").prepend(favRecipe);
-                    // }
-
-
-                
             })
         
-
-
     })
 }
-
 //shows the recipes as boxes to click on
 function renderBox() {
     $("#recipeBox").empty();
@@ -108,7 +81,6 @@ function renderBox() {
         $("#recipeBox").append(box);
     }
 }
-
 $(".favorite").on("click", function(event){
     event.preventDefault();
    
@@ -117,29 +89,24 @@ $(".favorite").on("click", function(event){
     $("#favorites").show();
     var favorites = JSON.parse(localStorage.getItem("favorites"))
     for(i=0; i < favorites.length; i++){
-
-    var bookmarkDiv = $("<div class='col-md-4 bookmarkDiv'>");
+    var bookmarkDiv = $("<div class='col-md-3 bookmarkDiv animated jello'>");
     var recTitle = $("<div class='title'>");
-    var recImg = $("<img id='recipePic'><br>");
+    var recImg = $("<img  id='recipePic'><br>");
     var recSrc = $("<a href='' target ='_blank' id='recipeWindow'>");
-
     recImg.attr("src", favorites[i].src);
     recTitle.text(favorites[i].title);
     recSrc.attr("href", favorites[i].href);
     recSrc.text("View Recipe");
-
     bookmarkDiv.prepend(recTitle);
     bookmarkDiv.prepend(recSrc);
     bookmarkDiv.prepend(recImg);
     $("#favorites").prepend(bookmarkDiv);
     }
 })
-
 //pushes the search to the recipe array
 $("#search").on("click", function (event) {
     event.preventDefault();
     var recipe = $("#newRecipe").val().trim()
-
     if (recipe === "") {
         return;
     }
@@ -147,11 +114,8 @@ $("#search").on("click", function (event) {
     $("#newRecipe").val("")
     renderBox();
 })
-
 //displays the results when the box is clicked
 $(document).on("click", ".food", displayRecipe);
 renderBox();
-
 $("#recipeResults").show();
 $("#favorites").hide();
-

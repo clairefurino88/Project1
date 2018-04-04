@@ -29,7 +29,7 @@
                    lng: position.coords.longitude
                };
                infoWindow.setPosition(pos); //if current location is found it will position 
-               infoWindow.setContent('Location found.'); //the browser to be centered around that location
+               infoWindow.setContent('Location found.'); //the location reads 'location found'
                infoWindow.open(map);
                map.setCenter(pos); //centers position of map
                locateGym(map, pos);
@@ -44,9 +44,9 @@
        var input = document.getElementById('pac-input'); //input information seen in div created in html element
        var searchBox = new google.maps.places.SearchBox(input); //input of the search box
        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); //searchbox located in top left corner of map
-       // Bias the SearchBox results towards current map's viewport.
+      
        map.addListener('bounds_changed', function () { //after you search one location it lets you change the bounds
-           searchBox.setBounds(map.getBounds());
+           searchBox.setBounds(map.getBounds());  // Bias the SearchBox results towards current map's viewport.
        });
        searchBox.addListener('places_changed', function () { //recieves exact longitude and latitude of places
            var places = searchBox.getPlaces(),
