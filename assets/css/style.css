@@ -21,6 +21,8 @@ body {
 #workouts {
   background-color: lavender;
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 #workoutBtns {
