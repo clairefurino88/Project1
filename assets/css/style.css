@@ -3,6 +3,10 @@ body {
   background-color: black;  
   font-family: 'Russo One', sans-serif;
 }
+.header-image{
+  width: 70%
+}
+
 #jumbotron {
   background-color: tomato;
   text-align: center;
