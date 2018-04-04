@@ -73,21 +73,6 @@ function displayRecipe() {
                 console.log(favorite)
 
                
-                    // event.preventDefault();
-                    // $("#favorites").show();
-            
-                    // $("#favorites").empty();
-
-                    // var favorites = JSON.parse(localStorage.getItem("favorites"));
-                    // for (i = 0; i < favorites.length; i++) {
-
-                    //     var favRecipe = $("recDiv, recipeImage, recipeButton, title")
-
-                    //     favRecipe.attr("src", favorites[i]);
-                    //     console.log(favRecipe.attr("src"));
-                    //     $("#favorites").prepend(favRecipe);
-                    // }
-
 
                 
             })

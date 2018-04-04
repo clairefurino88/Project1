@@ -2,6 +2,9 @@
 body {
   background-color: black;
 }
+.header-image{
+  width: 75%;
+}
 #jumbotron {
   background-color: tomato;
   text-align: center;
