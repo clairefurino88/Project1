@@ -29,7 +29,7 @@ function displayRecipe() {
             //create an image
             var recipeImage = $("<img id='recipePic'><br>")
             //create favorites button
-            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Bookmark the Recipe</button>")
+            var favoriteBtn = $("<button class='btn btn-success addFavorite'>Add Recipe to Favorites</button>")
             //create a link to the actually recipe
             var recipeButton = $("<a href='' target='_blank' id='recipeWindow'></a>")
             //get the name of the dish
@@ -77,6 +77,7 @@ function renderBox() {
         $("#recipeBox").append(box);
     }
 }
+//creates a function repopulating favorite menu to be used at end of favorite deletion function
 function showBookMark() {
    
     $("#favorites").empty();
@@ -100,6 +101,7 @@ function showBookMark() {
     $("#favorites").prepend(bookmarkDiv);
     }
 }
+//adds favorites
 $(".favorite").on("click", function(event){
     event.preventDefault();
    
