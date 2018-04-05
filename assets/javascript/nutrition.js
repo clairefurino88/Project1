@@ -1,5 +1,5 @@
 //array of recipes to be generated as boxes and all searches will push to this array
-var recipes = ["grilled chicken", "garden salad", "tuna wrap", "farro", "beet salad"];
+var recipes = ["grilled chicken", "garden salad", "baked salmon", "farro", "beet salad"];
 var favorites = [];
 var fav =JSON.parse(localStorage.getItem("favorites"))
 if(fav !== null ){
@@ -77,27 +77,64 @@ function renderBox() {
         $("#recipeBox").append(box);
     }
 }
+function showBookMark() {
+   
+    $("#favorites").empty();
+    $("#recipeResults").hide();
+    $("#favorites").show();
+    var favorites = JSON.parse(localStorage.getItem("favorites"));
+    for(i=0; i < favorites.length; i++){
+    var bookmarkDiv = $("<div class='col-md-3 bookmarkDiv animated jello'>");
+    var recTitle = $("<div class='title'>");
+    var recImg = $("<img  id='recipePic'><br>");
+    var recSrc = $("<a href='' target ='_blank' id='recipeWindow'>");
+    var b =$("<button class='delete'>").text("x").attr("data-index", i);
+    recImg.attr("src", favorites[i].src);
+    recTitle.text(favorites[i].title);
+    recSrc.attr("href", favorites[i].href);
+    recSrc.text("View Recipe");
+    bookmarkDiv.append(b);
+    bookmarkDiv.prepend(recTitle);
+    bookmarkDiv.prepend(recSrc);
+    bookmarkDiv.prepend(recImg);
+    $("#favorites").prepend(bookmarkDiv);
+    }
+}
 $(".favorite").on("click", function(event){
     event.preventDefault();
    
     $("#favorites").empty();
     $("#recipeResults").hide();
     $("#favorites").show();
-    var favorites = JSON.parse(localStorage.getItem("favorites"))
+    var favorites = JSON.parse(localStorage.getItem("favorites"));
     for(i=0; i < favorites.length; i++){
     var bookmarkDiv = $("<div class='col-md-3 bookmarkDiv animated jello'>");
     var recTitle = $("<div class='title'>");
     var recImg = $("<img  id='recipePic'><br>");
     var recSrc = $("<a href='' target ='_blank' id='recipeWindow'>");
+    var b =$("<button class='delete'>").text("x").attr("data-index", i);
     recImg.attr("src", favorites[i].src);
     recTitle.text(favorites[i].title);
     recSrc.attr("href", favorites[i].href);
     recSrc.text("View Recipe");
+    bookmarkDiv.append(b);
     bookmarkDiv.prepend(recTitle);
     bookmarkDiv.prepend(recSrc);
     bookmarkDiv.prepend(recImg);
     $("#favorites").prepend(bookmarkDiv);
     }
+})
+//deletes bookmarked items
+$(document).on("click", "button.delete", function() {
+    var favorites = JSON.parse(localStorage.getItem("favorites"));
+    var currentIndex = $(this).attr("data-index");
+
+    favorites.splice(currentIndex, 1);
+    fav = favorites;
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+
+    showBookMark();
 })
 //pushes the search to the recipe array
 $("#search").on("click", function (event) {
