@@ -89,7 +89,7 @@ function showBookMark() {
     var recTitle = $("<div class='title'>");
     var recImg = $("<img  id='recipePic'><br>");
     var recSrc = $("<a href='' target ='_blank' id='recipeWindow'>");
-    var b =$("<button class='delete'>").text("x (refresh page after deletion").attr("data-index", i);
+    var b =$("<button class='delete'>").text("x (refresh page after deletion)").attr("data-index", i);
     recImg.attr("src", favorites[i].src);
     recTitle.text(favorites[i].title);
     recSrc.attr("href", favorites[i].href);
